@@ -31,6 +31,22 @@ pub fn star_map_distances(list_1: &mut Vec<i32>, list_2: &mut Vec<i32>) -> i32 {
     return star_distance;
 }
 
+/// Calculates the "similarity score" between two star lists
+///
+/// The function uses the given definition of a similarity between
+/// two locations as being the number of time location 1 appears in list 2
+/// multiplied by the value of location 1
+/// similarities for all locations in list 1 are summed to produce the final "similarity score"
+///
+/// # Arguments
+///
+/// * `list_1`: i32 - First list of locations.
+/// * `list_2`: i32 - Second list of locations.
+///
+/// # Returns
+///
+/// An `i32` representing the total "similarity score"
+///
 pub fn similarity_score(list_1: &mut Vec<i32>, list_2: &mut Vec<i32>) -> i32 {
     list_1.sort();
     list_2.sort();
