@@ -25,7 +25,7 @@ fn main() {
                     && is_only_increasing_or_decreasing(&mut vec)
                 {
                     num_safe_reports = num_safe_reports + 1;
-                    println!("match true");
+                    // println!("match true");
                 }
                 // println!("report row vec {:?}", vec);
             }
@@ -50,7 +50,7 @@ mod tests {
     #[test]
     fn test_is_lvl_diff_within_1_to_3() {
         let mut reports = vec![1, 3, 6, 7, 9];
-        assert!(is_lvl_diff_within_1_to_3(&mut reports));
+        assert!(is_lvl_diff_within_1_to_3(reports));
     }
 
     #[test]
